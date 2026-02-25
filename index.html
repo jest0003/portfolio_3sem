@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sJerier</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="todo.css">
+    <script type="module" src="todo.js"></script>
+
+</head>
+<body>
+    <header></header>
+    <main>
+        <article class="flex_row">
+            <section>
+                <h1>sJerier</h1>
+                <p>Noget omkring mig...</p>
+                <div><button>Projekter ↓</button><button>Hent CV</button></div>
+            </section>
+            <img class="max_width_300" src="jerie.anime_purplebg.webp" alt="">
+        </article>
+        <article class="blue_bg">
+            <h2>Kompetancer</h2>
+            <section>
+                Et grid med logoer + tekst
+            </section>
+        </article>
+        <article>
+            <h2>I hope to find...</h2>
+            <section class="flex_row">
+                Hvad jeg håber på at finde i en praktik plads.
+            </section>
+        </article>
+        <article class="flex_col">
+            <h1>Porjekter</h1>
+            <section><button>NV-FOTO</button><button>ToDo App</button></section>
+        </article>
+        <article>
+            <h2>NV-FOTO</h2>
+            <section class="flex_row">
+                <div class="nv-foto-karrusel">insæt karrusel her</div>
+                <div>
+                    <p>Redesign af website for NV-Foto .
+Opgaven bestod i at modernisere en hjemmeside, der ikke var blevet opdateret i over 15 år.
+Projektet blev udviklet i Astro, og jeg bidrog til research, design og prototypeudvikling. Gennem løbende brugertests sikrede vi en intuitiv og brugervenlig løsning. Jeg stod for kodning af forsiden, implementering af en Lottie-animation samt generelle frontend-opgaver.</p>
+<a href="http://nv-foto.dk">NV-FOTO site</a>
+                </div>
+            </section>
+        </article>
+        <article class="flex_row blue_bg">
+            <div>
+                <h2>ToDo App</h2>
+                <p>Udvikling af en funktionel ToDo-app med fokus på JavaScript, dynamisk DOM-manipulation og brugerfeedback. Formålet med projektet var at opbygge en robust og intuitiv applikation, hvor brugeren kan oprette, slette, like og markere opgaver som færdige samt fortryde handlinger. Opgaverne gemmes via localStorage, så data bevares mellem besøg. Der er arbejdet med visuel feedback gennem animationer.</p>
+
+            </div>
+        <div class="todo-app-wrapper">
+            <div>
+      <button id="to_do" class="tab active_tab">TO DO</button>
+      <button id="done" class="tab">DONE</button>
+    </div>
+    <section class="todo_section">
+      <div id="add_section">
+        <input id="input_text" placeholder="Add a task" type="input felt" />
+        <input id="input_number" placeholder="Amount" type="text" />
+        <img id="submit_task" src="add.png" class="icon" alt="" />
+      </div>
+
+      <ul class="task_container"></ul>
+    </section>
+
+    <section class="done_section">
+      <ul class="done_container"></ul>
+    </section>
+        </div></article>
+    </main>
+    <footer></footer>
+</body>
+</html>

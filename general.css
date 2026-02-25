@@ -1,0 +1,35 @@
+main {display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #F8FAFF;
+}
+.blue_bg {display: inline;
+    background-color: #D5E1FF;
+}
+.max_width_300 {
+    max-width: 300px;
+    height: auto;
+}
+p {
+    max-width: 400px;
+}
+article {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media (width>800px){
+    article {
+    padding-left: 83px;
+    padding-right: 83px;
+}
+    .flex_row {
+    display: flex;
+flex-direction: row;
+}
+
+    .flex_col {
+    display: flex;
+    flex-direction: column;
+}
+}

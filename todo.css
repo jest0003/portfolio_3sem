@@ -1,0 +1,143 @@
+.icon {
+    max-width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.tab {
+    width: 200px;
+    height: 44px;
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-style: solid 1px;
+    border-color: #755535;
+    z-index: 0;
+    background-color: #D7D5FF
+;
+}
+
+.active_tab {
+    position: relative;
+    border-bottom: 0;
+    z-index: 2;
+    background-color: #F8FAFF;
+}
+
+input {
+    border-radius: 10px;
+    border-color: #755535;
+    border-style: groove;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todo_section {
+    position: absolute;
+    top: 52px;
+    left: 8px;
+    width: 385px;
+    border: solid 2px;
+    border-color: #755535;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    margin-top: -2px;
+    height: 400px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #F8FAFF;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.done_section {
+    position: absolute;
+    top: 52px;
+    left: 8px;
+    width: 385px;
+    border: solid 2px;
+    border-color: #755535;
+    padding-top: 25px;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    margin-top: -2px;
+    height: 400px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #F8FAFF;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.display_none {
+    display: none;
+}
+
+#add_section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#input_number {
+    width: 50px;
+}
+
+#input_text {
+    width: 250px;
+}
+
+.task_to_do {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #755535;
+
+}
+
+.task_done {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #755535;
+}
+
+.margin_right {
+    margin-right: 20px;
+}
+li, ul {
+display: inline;
+list-style: none;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #755535;
+    margin-top: 16px;
+}
+
+@keyframes slide_right {
+    to {transform: translateX(390px);
+    opacity: 0;}
+}
+@keyframes slide_left {
+    to {transform: translateX(-390px);
+    opacity: 0;}
+}
+
+.slide_right {
+    animation: slide_right 0.4s;
+}
+
+.slide_left {
+animation: slide_left 0.4s;
+}
