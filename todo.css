@@ -33,10 +33,6 @@ input {
 button {
     cursor: pointer;
 }
-
-.todo_section {
-    z-index: 1;
-}
 .done_section, .todo_section {
     position: relative;
     width: 100%;
@@ -56,10 +52,6 @@ button {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-}
-
-.done_section {
-    z-index: 0;
 }
 
 .display_none {
