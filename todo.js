@@ -29,9 +29,14 @@ window.addEventListener("DOMContentLoaded", () => {
                 liked: true,
                 id: crypto.randomUUID()
             },
-                {text: "Buy catfood",
+                {text: "Buy cat food",
                 amount: "3 kg",
                 done: false,
+                liked: false,
+                id: crypto.randomUUID()}, 
+                {text: "Update CV",
+                amount: "",
+                done: true,
                 liked: false,
                 id: crypto.randomUUID()}
         ];
@@ -83,7 +88,7 @@ function showTaskArr(arr) {
 
         const li = document.createElement("li");
         li.innerHTML=`<p>${elm.text}</p>
-        <div class="flex_row">
+        <div class="flex">
         <p class="margin_right">${elm.amount}</p>
         <img class="icon margin_right taskDone" title="Task done" src="check-mark.png" alt="" />
         <img class="icon likingIt" src=${elm.liked?"love.png":"love-empty.png"} alt="" /></div>`
@@ -119,7 +124,7 @@ arr.forEach (elm => {
     const li = document.createElement("li");
 
     li.innerHTML= `<p>${elm.text}</p>
-        <div class="flex_row">
+        <div class="flex">
         <p class="margin_right">${elm.amount}</p>
         <img class="icon margin_right delete" title ="delete" src="delete.png"} alt="" />
         <img class="icon undoTask" title ="Undo task" src="file.png" alt="" /></div>`
