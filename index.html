@@ -17,9 +17,9 @@
                 <h1>sJerier</h1>
                 <p>Jeg er frontend-fokuseret multimediedesignstuderende med særlig interesse for logik og struktur i kode. Jeg motiveres af at få komplekse ting til at fungere, og den tilfredsstillelse der opstår, når det hele endelig spiller.</p>
 <p>Jeg starter ofte i et kreativt kaos, men trives bedst, når jeg får skabt overblik og system i både design og kode. I gruppearbejde fungerer jeg som sparringspartner og bidrager med refleksion og struktur for at sikre gennemtænkte løsninger.</p>
-                <div><button class="btn_look">Projekter ↓</button><button class="btn_look">Hent CV</button></div>
+                <div><a href="#projekter" class="btn_look">Projekter ↓</a><a href="Jerie_CV.pdf" download class="btn_look">Hent CV</a></div>
             </section>
-            <img class="max_width_300" src="jerie.anime_purplebg.webp" alt="">
+            <img class="height_500" src="jerie.anime_purplebg.webp" alt="">
         </article>
         <img class="margin_buttom_4px margin_top_40px" src="blue_lines.png" alt="">
         <article class="blue_bg">
@@ -29,19 +29,26 @@
             </section>
         </article>
         <article class="purple_bg">
-            <img class="margin_buttom_4px lines_upsidedown" src="blue_lines.png" alt="">
-            <h2 class="margin_top_40px">I hope to find...</h2>
-            <section class="flex_row">
-                Hvad jeg håber på at finde i en praktik plads.
-            </section>
+            <img class="margin_buttom_4px lines_upsidedown lines" src="blue_lines.png" alt="">
+            <h2 class="margin_top_40px">Mit næste skridt</h2>
+            <section class="flex_row space_between">
+                <div><p>Mit næste skridt er en praktikplads, hvor jeg kan udvikle mig teknisk og indgå i et team, der arbejder struktureret og målrettet. Jeg ønsker at være en del af en virksomhed, der har erfaring med praktikanter og prioriterer læring, sparring og feedback.</p>
+<p>Jeg motiveres af at arbejde med logik, struktur og funktionalitet, og jeg vil gerne styrke mine kompetencer inden for frontend-udvikling gennem konkrete opgaver og reel deltagelse i projekter.
+</p></div>
+<div>
+    <p>Samtidig vil jeg gerne være en del af den kreative proces og forstå de valg, der ligger bag løsningerne, så jeg ikke blot implementerer, men bidrager med refleksion og helhedsforståelse.</p>
+<p>Jeg søger et fagligt miljø med ro og overblik, men også plads til eksperimenter og refleksion. Et sted, hvor jeg ikke blot observerer, men bidrager og udvikler mig i samspil med andre.</p>
+</div>
+</section>
         </article>
-        <article class="flex_col">
-            <h1>Porjekter</h1>
+        <img src="purple_lines.png" alt="">
+        <article class="flex_col margin_top_40px">
+            <h1 id="projekter">Projekter</h1>
             <section><button class="btn_look">NV-FOTO</button><button class="btn_look">ToDo App</button></section>
         </article>
         <article>
             <h2>NV-FOTO</h2>
-            <section class="flex_row">
+            <section class="flex_row space_between">
                 <div class="nv-foto-karrusel">insæt karrusel her</div>
                 <div>
                     <p>Redesign af website for NV-Foto .
@@ -51,13 +58,15 @@ Projektet blev udviklet i Astro, og jeg bidrog til research, design og prototype
                 </div>
             </section>
         </article>
+        <img class="margin_top_40px" src="blue_lines.png" alt="">
         <article class="flex_row blue_bg space_between">
-            <div>
+            <div class="margin_top_40px">
                 <h2>ToDo App</h2>
-                <p>Udvikling af en funktionel ToDo-app med fokus på JavaScript, dynamisk DOM-manipulation og brugerfeedback. Formålet med projektet var at opbygge en robust og intuitiv applikation, hvor brugeren kan oprette, slette, like og markere opgaver som færdige samt fortryde handlinger. Opgaverne gemmes via localStorage, så data bevares mellem besøg. Der er arbejdet med visuel feedback gennem animationer.</p>
-
+                <p>Udvikling af en funktionel ToDo-app med fokus på JavaScript, dynamisk DOM-manipulation og brugerfeedback.</p>
+<p>Formålet med projektet var at opbygge en robust og intuitiv applikation, hvor brugeren kan oprette, slette, like og markere opgaver som færdige samt fortryde handlinger.</p>
+<p>Opgaverne gemmes via localStorage, så data bevares mellem besøg. Der er også arbejdet med visuel feedback igennem animationer.</p>
             </div>
-        <div class="todo-app-wrapper">
+        <div class="todo-app-wrapper margin_top_40px">
             <div>
       <button id="to_do" class="tab active_tab">TO DO</button>
       <button id="done" class="tab">DONE</button>
@@ -66,13 +75,13 @@ Projektet blev udviklet i Astro, og jeg bidrog til research, design og prototype
       <div id="add_section">
         <input id="input_text" placeholder="Add a task" type="input felt" />
         <input id="input_number" placeholder="Amount" type="text" />
-        <img id="submit_task" src="add.png" class="icon" alt="" />
+        <img id="submit_task" src="../todo_img/add.png" class="icon" alt="" />
       </div>
 
       <ul class="task_container"></ul>
     </section>
 
-    <section class="done_section">
+    <section class="done_section display_none">
       <ul class="done_container"></ul>
     </section>
         </div></article>

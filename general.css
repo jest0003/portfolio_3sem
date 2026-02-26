@@ -4,8 +4,29 @@ main {display: flex;
     margin: 0 auto;
     background-color: #F8FAFF;
 }
+@font-face {
+    font-family: offside;
+    src: url(fonts/Offside-Regular.ttf);
+}
+@font-face {
+    font-family: manrope_r;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: manrope_m;
+    src: url(fonts/Manrope-Medium.ttf);
+}
+h1, h2, h3 {
+    font-family: offside;;
+}
+p {
+    font-family: manrope_r;
+    font-size: 18px;
+}
+
 .btn_look {
     display: inline-block;
+    position: relative;
     background-color: #EFFF94;
     border-radius: 25px;
     text-align: center;
@@ -13,6 +34,12 @@ main {display: flex;
     border-style: none;
     box-shadow: 0 5px #FFD394;
     margin: 10px;
+    font-family: manrope_m;
+    color: #4D4C5B;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 .flex {
     display: flex;
@@ -38,9 +65,9 @@ rotate: 180deg;
     display: inline-block;
     background-color: #D7D5FF;
 }
-.max_width_300 {
-    max-width: 300px;
-    height: auto;
+.height_500 {
+    width: auto;
+    height: 500px;
 }
 p {
     max-width: 400px;
@@ -50,19 +77,20 @@ article {
     padding-right: 10px;
     overflow: hidden;
 }
-article img {
+.lines {
     margin-left: -10px;
     margin-right: -10px;
 }
+
 @media (width>800px){
     article {
-    padding-left: 83px;
-    padding-right: 83px;
+    padding-left: 73px;
+    padding-right: 73px;
     overflow: hidden;
 }
-article img{
-    margin-left: -83px;
-    margin-right: -83px;
+.lines {
+    margin-left: -73px;
+    margin-right: -37px;
 }
     .flex_row {
     display: flex;

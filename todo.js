@@ -47,21 +47,22 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 function showDone() {
-    todoSection.style.zIndex ="0";
-    doneSection.style.zIndex = "1";
     todoBtn.style.backgroundColor = "#D7D5FF";
     doneBtn.style.backgroundColor = "#F8FAFF";
     todoBtn.classList.remove("active_tab");
     doneBtn.classList.add("active_tab");
+    doneSection.classList.remove("display_none");
+    todoSection.classList.add("display_none");
 }
 
 function showTodo() {
-    todoSection.style.zIndex = "1";
-    doneSection.style.zIndex ="0";
     doneBtn.style.backgroundColor = "#D7D5FF";
     todoBtn.style.backgroundColor = "#F8FAFF";
     doneBtn.classList.remove("active_tab");
     todoBtn.classList.add("active_tab");
+    doneSection.classList.add("display_none");
+    todoSection.classList.remove("display_none");
+
 }
 
 addBtn.addEventListener("click", submitTodo);
@@ -90,8 +91,8 @@ function showTaskArr(arr) {
         li.innerHTML=`<p>${elm.text}</p>
         <div class="flex">
         <p class="margin_right">${elm.amount}</p>
-        <img class="icon margin_right taskDone" title="Task done" src="check-mark.png" alt="" />
-        <img class="icon likingIt" src=${elm.liked?"love.png":"love-empty.png"} alt="" /></div>`
+        <img class="icon margin_right taskDone" title="Task done" src="../todo_img/check-mark.png" alt="" />
+        <img class="icon likingIt" src=${elm.liked?"../todo_img/love.png":"../todo_img/love-empty.png"} alt="" /></div>`
 
         task_container.appendChild(li);
 
@@ -126,8 +127,8 @@ arr.forEach (elm => {
     li.innerHTML= `<p>${elm.text}</p>
         <div class="flex">
         <p class="margin_right">${elm.amount}</p>
-        <img class="icon margin_right delete" title ="delete" src="delete.png"} alt="" />
-        <img class="icon undoTask" title ="Undo task" src="file.png" alt="" /></div>`
+        <img class="icon margin_right delete" title ="delete" src="../todo_img/delete.png"} alt="" />
+        <img class="icon undoTask" title ="Undo task" src="../todo_img/file.png" alt="" /></div>`
 
     done_container.appendChild(li);
 
