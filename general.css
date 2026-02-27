@@ -3,6 +3,8 @@ main {display: flex;
     max-width: 1000px;
     margin: 0 auto;
     background-color: #F8FAFF;
+    /* width: 100%; */
+
 }
 @font-face {
     font-family: offside;
@@ -59,15 +61,13 @@ a {
 .margin_top_40px {
 margin-top: 40px;
 }
-.blue_bg {display: inline-block;
+.blue_bg {
     background-color: #D5E1FF;
 }
 .lines_upsidedown {
-    display: inline-block;
 rotate: 180deg;
 }
 .purple_bg {
-    display: inline-block;
     background-color: #D7D5FF;
 }
 .height_500 {
@@ -75,24 +75,40 @@ rotate: 180deg;
     height: 500px;
 }
 article {
+    position: relative;
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
+    
 }
+
 .lines {
-    margin-left: -10px;
-    margin-right: -10px;
+    position: relative;
+    display: block;
+    height: 44px;
+    width: auto;
+    object-fit: cover;
+}
+
+@media (width<801px) {
+    article {
+        align-items: center;
+    
+    }
+    .mobile_reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    article img {
+        margin-left: -10px;
+    }
 }
 
 @media (width>800px){
-    article {
+    article{
     padding-left: 73px;
     padding-right: 73px;
     overflow: hidden;
-}
-.lines {
-    margin-left: -73px;
-    margin-right: -37px;
 }
     .flex_row {
     display: flex;
