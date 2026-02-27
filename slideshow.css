@@ -1,0 +1,40 @@
+.nv-foto-karrusel {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FFD394;
+}
+
+.dot.active {
+    background-color: #D5E1FF;
+}
