@@ -27,6 +27,7 @@ p {
     max-width: 370px;
 }
 
+
 .btn_look {
     display: inline-block;
     position: relative;
@@ -60,6 +61,9 @@ a {
 }
 .margin_top_40px {
 margin-top: 40px;
+}
+.padding_buttom_60px {
+    padding-bottom: 60px;
 }
 .blue_bg {
     background-color: #D5E1FF;
@@ -183,6 +187,8 @@ flex-direction: row;
     .flex_col {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-bottom: solid 4px #D7D5FF;
 }
 .space_between {
     justify-content: space-between;
