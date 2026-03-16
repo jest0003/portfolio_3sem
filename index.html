@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="todo.css">
     <script type="module" src="todo.js"></script>
     <script type="module" src="slideshow.js"></script>
+    <script type="module" src="language.js"></script>
     <link rel="stylesheet" href="slideshow.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
@@ -19,18 +20,19 @@
 <body>
     <header></header>
     <main>
+        <article class="lang_switch"><a class="btn_look" data-lang="dk">DK</a><a class="btn_look" data-lang="en">EN</a></article>
         <article class="flex_row space_between mobile_reverse margin_top_40px">
             <section>
                 <h1>sJerier</h1>
-                <p>Jeg er frontend-fokuseret multimediedesign studerende, med særlig interesse for logik og struktur i kode. Jeg motiveres af at få komplekse ting til at fungere, og den tilfredsstillelse der opstår, når det hele endelig spiller.</p>
-<p>Jeg starter ofte i et kreativt kaos, men trives bedst, når jeg får skabt overblik og system i både design og kode. I gruppearbejde fungerer jeg som sparringspartner og bidrager med refleksion og struktur for at sikre gennemtænkte løsninger.</p>
-                <div><a href="#projekter" class="btn_look">Projekter ↓</a><a href="Jerie_CV.pdf" download class="btn_look">Hent CV</a></div>
+                <p data-i18n="hero_text_1"></p>
+<p data-i18n="hero_text_2"></p>
+                <div><a href="#projekter" class="btn_look" data-i18n="projects_btn"></a><a id="cv_btn" download class="btn_look" data-i18n="cv_btn"></a></div>
             </section>
             <img class="height_500" src="jerie.anime_purplebg.webp" alt="">
         </article>
         <img class="margin_buttom_4px margin_top_40px lines" src="blue_lines.png" alt="">
         <article class="blue_bg padding_buttom_60px">
-            <h2 class="margin_top_40px">Kompetancer</h2>
+            <h2 class="margin_top_40px" data-i18n="comp"></h2>
             <section class="kompetence_grid margin_top_40px">
                 <img id="_1" class="grid_center" src="icons/photoshop.webp" alt="">
                 <img id="_2" class="grid_center" src="icons/lightroom.webp" alt="">
@@ -46,25 +48,24 @@
                 <img id="_12" class="grid_center" src="icons/astro.webp" alt="">
                 <img id="_13" class="grid_center" src="icons/vsCode.webp" alt="">
                 <img id="_14" class="grid_center" src="icons/github.webp" alt="">
-                <p id="_15">Jeg arbejder i spændet mellem frontend, brugeroplevelse og visuel formidling. Mine kompetencer dækker både udvikling, designværktøjer og praktisk erfaring med samarbejde og brugertest.</p>
+                <p id="_15" data-i18n="comp_text"></p>
             </section>
         </article>
         <article class="purple_bg padding_buttom_60px">
             <img class="margin_buttom_4px lines_upsidedown lines " src="blue_lines.png" alt="">
-            <h2 class="margin_top_40px">Mit næste skridt</h2>
+            <h2 class="margin_top_40px" data-i18n="next_step_title"></h2>
             <section class="flex_row space_between">
-                <div><p>Mit næste skridt er en praktikplads, hvor jeg kan udvikle mig teknisk og indgå i et team, der arbejder struktureret og målrettet. Jeg ønsker at være en del af en virksomhed, der har erfaring med praktikanter og prioriterer læring, sparring og feedback.</p>
-<p>Jeg motiveres af at arbejde med logik, struktur og funktionalitet, og jeg vil gerne styrke mine kompetencer inden for frontend-udvikling gennem konkrete opgaver og reel deltagelse i projekter.
-</p></div>
+                <div><p data-i18n="next_step_text_1"></p>
+<p data-i18n="next_step_text_2"></p></div>
 <div>
-    <p>Samtidig vil jeg gerne inddrages i den kreative proces og forstå de valg, der ligger bag løsningerne, så jeg ikke blot implementerer, men bidrager med refleksion og helhedsforståelse.</p>
-<p>Jeg søger et fagligt miljø med ro og overblik, men også plads til eksperimenter. Et sted, hvor jeg ikke blot observerer, men bidrager og udvikler mig i samspil med andre.</p>
+    <p data-i18n="next_step_text_3"></p>
+<p data-i18n="next_step_text_4"></p>
 </div>
 </section>
         </article>
         <img class="lines" src="purple_lines.png" alt="">
         <article class="flex_col padding_buttom_60px margin_top_40px">
-            <h1 id="projekter">Projekter</h1>
+            <h1 id="projekter" data-i18n="projects"></h1>
             <section><a href="#nv-foto" class="btn_look">NV-FOTO</a><a href="#todo_app" class="btn_look">ToDo App</a></section>
         </article>
         <article class="margin_top_40px">
@@ -83,9 +84,7 @@
                     </div>
                 </div>
                 <div>
-                    <p>Redesign af website for NV-Foto .
-Opgaven bestod i at modernisere en hjemmeside, der ikke var blevet opdateret i over 15 år.
-Projektet blev udviklet i Astro, og jeg bidrog til research, design og prototypeudvikling. Gennem løbende brugertests sikrede vi en intuitiv og brugervenlig løsning. Jeg stod for kodning af forsiden, implementering af en Lottie-animation samt generelle frontend-opgaver.</p>
+                    <p data-i18n="nv_foto_text"></p>
 <a class="btn_look" target="_blank" href="http://nv-foto.dk">NV-FOTO site</a>
                 </div>
             </section>
@@ -94,9 +93,9 @@ Projektet blev udviklet i Astro, og jeg bidrog til research, design og prototype
         <article class="flex_row blue_bg padding_buttom_60px space_between">
             <div class="margin_top_40px">
                 <h2 id="todo_app">ToDo App</h2>
-                <p>Udvikling af en funktionel ToDo-app med fokus på JavaScript, dynamisk DOM-manipulation og brugerfeedback.</p>
-<p>Formålet med projektet var at opbygge en robust og intuitiv applikation, hvor brugeren kan oprette, slette, like og markere opgaver som færdige samt fortryde handlinger.</p>
-<p>Opgaverne gemmes via localStorage, så data bevares mellem besøg. Der er også arbejdet med visuel feedback igennem animationer.</p>
+                <p data-i18n="to_do_text_1"></p>
+<p data-i18n="to_do_text_2"></p>
+<p data-i18n="to_do_text_3"></p>
             </div>
         <div class="todo-app-wrapper margin_top_40px">
             <div>
