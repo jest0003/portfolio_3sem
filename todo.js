@@ -127,8 +127,9 @@ arr.forEach (elm => {
     li.innerHTML= `<p>${elm.text}</p>
         <div class="flex">
         <p class="margin_right">${elm.amount}</p>
+        <img class="icon undoTask" title ="Undo task" src="../todo_img/file.png" alt="" />
         <img class="icon margin_right delete" title ="delete" src="../todo_img/delete.png"} alt="" />
-        <img class="icon undoTask" title ="Undo task" src="../todo_img/file.png" alt="" /></div>`
+        </div>`
 
     done_container.appendChild(li);
 
